@@ -431,8 +431,8 @@ header {
   transform: translateY(-50px); /* Start from above */
   animation: fadeInUp 1s ease-out forwards; /* Animation trigger */
   animation-delay: 0.5s; /* Delay before animation starts */
-  margin-top: -6vh;
-  margin-bottom: 3vh;
+  margin-top: -4vh;
+  margin-bottom: 2vh;
 }
 
 /* Responsive font size */
