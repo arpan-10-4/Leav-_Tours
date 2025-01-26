@@ -689,12 +689,12 @@ figure.snip1390 .profile {
   color: #fff;
 }
 
-/* General Footer Styling */
+
+/* Footer Styles */
 #footer {
   background-color: #333;
   color: #fff;
-  padding: 40px 20px;
-  font-family: 'Arial', sans-serif;
+  padding: 50px 0;
 }
 
 .footer-container {
@@ -702,48 +702,44 @@ figure.snip1390 .profile {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 20px;
+  padding: 0 20px;
 }
 
-.footer-section {
+.footer-links {
   flex: 1;
-  min-width: 250px;
-  padding: 15px;
+  min-width: 200px;
 }
 
-.footer-section h3 {
-  font-size: 1.4rem;
+.footer-links h3 {
+  font-size: 1.5rem;
   margin-bottom: 15px;
   text-transform: uppercase;
   font-weight: bold;
-  color: #f1f1f1;
 }
 
-.footer-section ul {
+.footer-links ul {
   list-style: none;
   padding: 0;
 }
 
-.footer-section ul li {
+.footer-links ul li {
   margin: 10px 0;
 }
 
-.footer-section ul li a {
-  color: #ddd;
+.footer-links ul li a {
+  color: #fff;
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
-.footer-section ul li a:hover {
-  color: #4caf50;
+.footer-links ul li a:hover {
+  text-decoration: underline;
 }
 
-/* Footer Bottom */
 .footer-bottom {
+  background-color: #222;
   text-align: center;
   padding: 20px 0;
   color: #aaa;
-  background-color: #222;
 }
 
 .footer-bottom p {
@@ -763,8 +759,6 @@ figure.snip1390 .profile {
 .footer-bottom ul li a {
   color: #aaa;
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
 }
 
 .footer-bottom ul li a:hover {
@@ -774,42 +768,12 @@ figure.snip1390 .profile {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .footer-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 0 20px;
+      flex-direction: column;
+      align-items: center;
   }
 
-  .footer-section {
-    min-width: 100%;
-    margin-bottom: 20px;
-    text-align: center;
-  }
+  #subscribe .subscribe-form button {
+    padding: 10px 10px;
 
-  .footer-bottom {
-    padding: 20px 10px;
-  }
-
-  .footer-bottom ul li {
-    display: block;
-    margin: 10px 0;
-  }
-}
-
-/* Desktop Responsiveness */
-@media (min-width: 1024px) {
-  #footer {
-    padding: 40px 20px;
-  }
-
-  .footer-container {
-    padding: 0 50px;
-  }
-
-  .footer-section {
-    min-width: 250px;
-  }
-
-  .footer-bottom {
-    padding: 20px 0;
   }
 }
