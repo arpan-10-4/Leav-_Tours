@@ -689,40 +689,34 @@ figure.snip1390 .profile {
   color: #fff;
 }
 
-/* Footer Styles */
+/* General Footer Styling */
 #footer {
   background-color: #333;
   color: #fff;
-  padding: 30px 20px; /* Reduced padding to make footer shorter */
-  width: 100%;
-  position: relative;
-  left: 0;
-  right: 0;
-  margin: 0;
+  padding: 40px 20px;
   font-family: 'Arial', sans-serif;
 }
 
-/* Footer Container */
 .footer-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 20px; /* Reduced margin to make footer shorter */
+  margin-bottom: 20px;
 }
 
-/* Footer Sections */
 .footer-section {
   flex: 1;
   min-width: 250px;
-  padding: 15px; /* Reduced padding */
+  padding: 15px;
 }
 
 .footer-section h3 {
-  font-size: 1.4rem; /* Reduced font size for a shorter footer */
-  margin-bottom: 10px; /* Reduced margin */
+  font-size: 1.4rem;
+  margin-bottom: 15px;
   text-transform: uppercase;
   font-weight: bold;
+  color: #f1f1f1;
 }
 
 .footer-section ul {
@@ -731,11 +725,11 @@ figure.snip1390 .profile {
 }
 
 .footer-section ul li {
-  margin: 8px 0; /* Reduced margin for a more compact footer */
+  margin: 10px 0;
 }
 
 .footer-section ul li a {
-  color: #fff;
+  color: #ddd;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -747,9 +741,9 @@ figure.snip1390 .profile {
 /* Footer Bottom */
 .footer-bottom {
   text-align: center;
-  padding: 15px 0; /* Reduced padding */
+  padding: 20px 0;
   color: #aaa;
-  background-color: transparent; /* Removed black background */
+  background-color: #222;
 }
 
 .footer-bottom p {
@@ -777,21 +771,6 @@ figure.snip1390 .profile {
   color: #fff;
 }
 
-/* Responsive Design for Desktop */
-@media (min-width: 1024px) {
-  #footer {
-    padding: 30px 20px;
-  }
-
-  .footer-container {
-    padding: 0 50px;
-  }
-
-  .footer-section {
-    min-width: 250px;
-  }
-}
-
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .footer-container {
@@ -813,5 +792,24 @@ figure.snip1390 .profile {
   .footer-bottom ul li {
     display: block;
     margin: 10px 0;
+  }
+}
+
+/* Desktop Responsiveness */
+@media (min-width: 1024px) {
+  #footer {
+    padding: 40px 20px;
+  }
+
+  .footer-container {
+    padding: 0 50px;
+  }
+
+  .footer-section {
+    min-width: 250px;
+  }
+
+  .footer-bottom {
+    padding: 20px 0;
   }
 }
