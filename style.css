@@ -694,6 +694,11 @@ figure.snip1390 .profile {
   background-color: #333;
   color: #fff;
   padding: 50px 0;
+  width: 100%; /* Ensures full width */
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0;
 }
 
 .footer-container {
@@ -773,6 +778,5 @@ figure.snip1390 .profile {
 
   #subscribe .subscribe-form button {
     padding: 10px 10px;
-
   }
 }
