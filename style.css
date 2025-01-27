@@ -631,207 +631,52 @@ figure.snip1390 .profile {
 /*-------------------------------Footer*/
 /* Make the Difference Section */
 /* Make the Difference Section */
-#subscribe {
-  color: #fff;
-  text-align: center;
-  padding: 50px 20px;
-}
-
-#subscribe .subscribe-box {
-  background-color: #007073;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-#subscribe h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  font-family: 'Open Sans', sans-serif;
-}
-
-#subscribe p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-}
-
-#subscribe .subscribe-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-#subscribe .subscribe-form input {
-  padding: 10px;
-  font-size: 1rem;
-  border: 2px solid #fff;
-  border-radius: 4px;
-  color: #007073;
-  background-color: #fff;
-}
-
-#subscribe .subscribe-form button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  background-color: #fff;
-  color: #007073;
-  border: 2px solid #007073;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-#subscribe .subscribe-form button:hover {
-  background-color: #007073;
-  color: #fff;
-}
-
-
-
-/* General Footer Styling */
-#footer {
-  width: 100% !important;
+/* Footer Styles */
+.footer {
   background-color: #333;
-  color: #fff;
-  padding: 40px 20px;
-  font-family: 'Arial', sans-serif;
-  box-sizing: border-box; /* Ensures padding is included in width/height */
+  margin-top: 50px;
+  padding: 20px;
+  color: #ffffff;
+  text-align: center; /* Center-align text for better visual appeal */
+  font-family: Arial, sans-serif; /* Consistent font */
 }
 
-.footer-container {
-  width: 100%;
+.footer-links {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-bottom: 20px;
-  box-sizing: border-box; /* Consistent rendering */
+  justify-content: center; /* Center-align the links */
+  flex-wrap: wrap; /* Wrap links on smaller screens */
+  gap: 15px; /* Add space between links */
+  margin-bottom: 10px; /* Add spacing below links */
+  font-size: 14px; /* Slightly larger and more readable font size */
 }
 
-.footer-section {
-  flex: 1;
-  min-width: 250px;
-  padding: 15px;
-  box-sizing: border-box;
-}
-
-.footer-section h3 {
-  font-size: 1.4rem;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #f1f1f1;
-}
-
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-section ul li {
-  margin: 10px 0;
-}
-
-.footer-section ul li a {
-  color: #ddd;
+.footer-links a {
+  color: #ffffff;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.3s; /* Smooth hover effect */
 }
 
-.footer-section ul li a:hover {
-  color: #4caf50;
+.footer-links a:hover {
+  color: #edf6f9; /* Change color on hover for interactivity */
 }
 
-/* Footer Bottom */
-.footer-bottom {
-  text-align: center;
-  padding: 20px 0;
-  color: #aaa;
-  background-color: #222;
+.footer p {
+  font-size: 12px;
+  margin: 0; /* Remove unnecessary margin */
 }
 
-.footer-bottom p {
-  margin-bottom: 10px;
+.hide {
+  display: none;
 }
 
-.footer-bottom ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-bottom ul li {
-  display: inline;
-  margin: 0 10px;
-}
-
-.footer-bottom ul li a {
-  color: #aaa;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.footer-bottom ul li a:hover {
-  color: #fff;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 0 20px;
+/* Responsive Design */
+@media (max-width: 480px) {
+  .footer-links {
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center-align in vertical layout */
   }
 
-  .footer-section {
-    min-width: 100%;
-    margin-bottom: 20px;
-    text-align: center;
+  .footer p {
+    font-size: 10px; /* Adjust font size for smaller screens */
   }
-
-  .footer-bottom {
-    padding: 20px 10px;
-  }
-
-  .footer-bottom ul li {
-    display: block;
-    margin: 10px 0;
-  }
-}
-
-/* Desktop Responsiveness */
-@media (min-width: 1024px) {
-  #footer {
-    padding: 40px 20px;
-  }
-
-  .footer-container {
-    padding: 0 50px;
-  }
-
-  .footer-section {
-    min-width: 250px;
-  }
-
-  .footer-bottom {
-    padding: 20px 0;
-  }
-}
-
-/* Fix for Footer Size on Platforms */
-.footer-container > .footer-section {
-  min-height: 100px; /* Set a minimum height for consistency */
-}
-
-#footer {
-  min-height: 200px; /* Ensures footer doesn't shrink */
-}
-
-body {
-  margin: 0; /* Avoid margin issues affecting layout */
-  padding: 0;
-  box-sizing: border-box;
 }
