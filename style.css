@@ -690,56 +690,67 @@ figure.snip1390 .profile {
 }
 
 
-/* Footer Styles */
+
+/* General Footer Styling */
 #footer {
+  width: 100% !important;
   background-color: #333;
   color: #fff;
-  padding: 50px 0;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box; /* Ensures padding is included in width/height */
 }
 
 .footer-container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
-  padding: 0 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box; /* Consistent rendering */
 }
 
-.footer-links {
+.footer-section {
   flex: 1;
-  min-width: 200px;
+  min-width: 250px;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
-.footer-links h3 {
-  font-size: 1.5rem;
+.footer-section h3 {
+  font-size: 1.4rem;
   margin-bottom: 15px;
   text-transform: uppercase;
   font-weight: bold;
+  color: #f1f1f1;
 }
 
-.footer-links ul {
+.footer-section ul {
   list-style: none;
   padding: 0;
 }
 
-.footer-links ul li {
+.footer-section ul li {
   margin: 10px 0;
 }
 
-.footer-links ul li a {
-  color: #fff;
+.footer-section ul li a {
+  color: #ddd;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.footer-links ul li a:hover {
-  text-decoration: underline;
+.footer-section ul li a:hover {
+  color: #4caf50;
 }
 
+/* Footer Bottom */
 .footer-bottom {
-  background-color: #222;
   text-align: center;
   padding: 20px 0;
   color: #aaa;
+  background-color: #222;
 }
 
 .footer-bottom p {
@@ -759,6 +770,8 @@ figure.snip1390 .profile {
 .footer-bottom ul li a {
   color: #aaa;
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .footer-bottom ul li a:hover {
@@ -768,12 +781,57 @@ figure.snip1390 .profile {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .footer-container {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
   }
 
-  #subscribe .subscribe-form button {
-    padding: 1px 1px !important;
-
+  .footer-section {
+    min-width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
   }
+
+  .footer-bottom {
+    padding: 20px 10px;
+  }
+
+  .footer-bottom ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* Desktop Responsiveness */
+@media (min-width: 1024px) {
+  #footer {
+    padding: 40px 20px;
+  }
+
+  .footer-container {
+    padding: 0 50px;
+  }
+
+  .footer-section {
+    min-width: 250px;
+  }
+
+  .footer-bottom {
+    padding: 20px 0;
+  }
+}
+
+/* Fix for Footer Size on Platforms */
+.footer-container > .footer-section {
+  min-height: 100px; /* Set a minimum height for consistency */
+}
+
+#footer {
+  min-height: 200px; /* Ensures footer doesn't shrink */
+}
+
+body {
+  margin: 0; /* Avoid margin issues affecting layout */
+  padding: 0;
+  box-sizing: border-box;
 }
