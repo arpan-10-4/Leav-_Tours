@@ -773,7 +773,7 @@ figure.snip1390 .profile {
   }
 
   #subscribe .subscribe-form button {
-    padding: 10px 10px;
+    padding: 1px 1px !important;
 
   }
 }
